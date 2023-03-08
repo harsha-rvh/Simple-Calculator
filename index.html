@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+          <span id="result">0</span>
+        </div>
+        <div class="buttons">
+          <button class="clear" onclick="clearResult()">AC</button>
+          <button class="clear" onclick="backspace()">C</button>
+          <button class="operator" onclick="toggleSign()">&plusmn;</button>
+          <button class="operator" onclick="insertOperator('/')">÷</button>
+          <button onclick="insertNumber('7')">7</button>
+          <button onclick="insertNumber('8')">8</button>
+          <button onclick="insertNumber('9')">9</button>
+          <button class="operator" onclick="insertOperator('*')">x</button>
+          <button onclick="insertNumber('4')">4</button>
+          <button onclick="insertNumber('5')">5</button>
+          <button onclick="insertNumber('6')">6</button>
+          <button class="operator" onclick="insertOperator('-')">-</button>
+          <button onclick="insertNumber('1')">1</button>
+          <button onclick="insertNumber('2')">2</button>
+          <button onclick="insertNumber('3')">3</button>
+          <button class="operator" onclick="insertOperator('+')">+</button>
+          <button class="zero" onclick="insertNumber('0')">0</button>
+          <button onclick="insertDecimal('.')">.</button>
+          <button class="operator" onclick="calculateResult()">=</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
+    
